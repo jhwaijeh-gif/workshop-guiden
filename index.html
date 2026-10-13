@@ -243,6 +243,11 @@
   /* langa prompter scrollar i stallet for att fylla sidan */
   .prompt pre{max-height:320px;}
 
+  /* Telefon: numret ovanför rubriken så att text och bilder får hela bredden (Judes besked 2026-10-13) */
+  @media(max-width:640px){
+    .step{grid-template-columns:minmax(0,1fr);gap:12px;padding:26px 0;}
+    .step-n{width:30px;height:30px;font-size:13px;}
+  }
 </style>
 </head>
 <body>
@@ -486,7 +491,7 @@
             <h4>Låt Claude intervjua fram projektet åt dig</h4>
             <p>Vet du inte vad som ska stå i beskrivningen, eller vilka kontextfiler du behöver: låt Claude fråga sig fram till det. Öppna en vanlig chatt, klistra in prompten nedan och svara på frågorna. Du får tillbaka namnet, instruktionerna och filerna färdiga att klistra in.</p>
             <figure class="fig">
-              <img src="images/claude-prompt-bar.png" alt="Claudes textruta där du klistrar in prompten">
+              <img src="images/claude-prompt-bar.png?v=2" alt="Claudes textruta där du klistrar in prompten">
               <figcaption>Steg 5 · Klistra in i textrutan i Claude</figcaption>
             </figure>
             <div class="prompt">
